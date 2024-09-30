@@ -1,0 +1,188 @@
+                                            body {
+                                                margin: 0;
+                                                padding: 0;
+                                                font-family: "Ubuntu", sans-serif;
+                                                overflow: hidden;
+                                            }
+                                            
+                                            .main-container {
+                                                width: 100%;
+                                                margin: 0;
+                                                padding: 0;
+                                            }
+                                            
+                                            .logo-container {
+                                                width: 100px;
+                                                height: 100px;
+                                                margin: 50px auto 0 99px;
+                                            }
+                                            
+                                            .app-logo {
+                                                width: 100%;
+                                                height: 100%;
+                                            }
+                                            
+                                            .signup-link-box {
+                                                float: right;
+                                                margin: -60px 90px 0 0;
+                                            }
+                                            
+                                            .signup-link {
+                                                text-decoration: none;
+                                                padding: 8px 25px;
+                                                border: 1px solid #2E2E2E;
+                                                border-radius: 35px;
+                                                color: #2E2E2E;
+                                            }
+                                            
+                                            .signup-link:hover {
+                                                background-color: #CB1C1F;
+                                                color: white;
+                                            }
+                                            
+                                            .banner-image-box {
+                                                width: 60%;
+                                                height: 579px;
+                                                float: left;
+                                            }
+                                            
+                                            .banner-img {
+                                                width: 100%;
+                                                height: 102%;
+                                            }
+                                            
+                                            .login-form-box {
+                                                width: 30%;
+                                                height: 579px;
+                                                float: right;
+                                                margin: 100px 90px 0 0;
+                                            }
+                                            
+                                            .login-header {
+                                                margin-bottom: 25px;
+                                            }
+                                            
+                                            .login-title {
+                                                font-size: 35px;
+                                                line-height: 40px;
+                                                font-weight: 300;
+                                            }
+                                            
+                                            .input-container {
+                                                display: flex;
+                                                align-items: center;
+                                                width: 100%;
+                                                height: 40px;
+                                                border: 1px solid #B0B0B0;
+                                                margin-bottom: 10px;
+                                                border-radius: 5px;
+                                                box-sizing: border-box;
+                                            }
+                                            
+                                            .input-icon {
+                                                margin: 12px 10px;
+                                                width: 16px;
+                                                height: 16px;
+                                                flex-shrink: 0;
+                                            }
+                                            
+                                            .toggle-password-icon {
+                                                width: 18px;
+                                                height: 16px;
+                                                margin: 12px 10px;
+                                            }
+                                            
+                                            .input-field {
+                                                width: 100%;
+                                                outline: none;
+                                                border: none;
+                                                padding-left: 10px;
+                                                box-sizing: border-box;
+                                                flex-grow: 1;
+                                            }
+                                            
+                                            .login-button {
+                                                width: 100%;
+                                                height: 40px;
+                                                background-color: #CB1C1F;
+                                                border: none;
+                                                color: #ffffff;
+                                                border-radius: 30px;
+                                                margin-top: 20px;
+                                            }
+                                            
+                                            .forgot-password-box {
+                                                width: 100%;
+                                                text-align: center;
+                                                padding-top: 20px;
+                                            }
+                                            
+                                            .forgot-password-link {
+                                                text-decoration: none;
+                                                color: #2E2E2E;
+                                            }
+                                            
+                                            @media screen and (max-width: 640px) {
+                                                .logo-container {
+                                                    width: 70px;
+                                                    height: 70px;
+                                                    margin-top: 20px;
+                                                }
+                                                .app-logo {
+                                                    width: 70px;
+                                                    height: 70px;
+                                                }
+                                                .signup-link-box {
+                                                    float: right;
+                                                    margin-top: -30px;
+                                                    margin-right: 65px;
+                                                }
+                                                .signup-link {
+                                                    padding: 5px 10px;
+                                                    font-size: small;
+                                                }
+                                                .login-title {
+                                                    font-size: 25px;
+                                                }
+                                            }
+                                            
+                                            @media screen and (max-width: 768px) {
+                                                .banner-image-box {
+                                                    width: 0%;
+                                                }
+                                                .login-form-box {
+                                                    width: 80%;
+                                                    float: left;
+                                                    margin: 10% auto;
+                                                }
+                                                .login-header {
+                                                    margin-top: 50px;
+                                                }
+                                            }
+                                            /* New media queries for centering */
+                                            
+                                            @media screen and (max-width: 900px) {
+                                                .login-form-box {
+                                                    width: 90%;
+                                                    /* Adjust width as necessary */
+                                                    margin: 10% auto;
+                                                    /* Center the form vertically and horizontally */
+                                                    float: none;
+                                                    /* Remove float */
+                                                }
+                                            }
+                                            
+                                            @media screen and (max-width: 350px) {
+                                                .signup-link-box {
+                                                    float: none;
+                                                    /* Remove float */
+                                                    text-align: center;
+                                                    /* Center align */
+                                                    margin: 10px 0;
+                                                    /* Optional margin adjustment */
+                                                }
+                                                .signup-link {
+                                                    display: inline-block;
+                                                    /* Ensure it's treated as an inline element */
+                                                }
+                                            }

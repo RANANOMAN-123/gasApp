@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <div id="logo">
+            <img src="/assets/Logo/logo.png" id="logoimg" alt="Logo">
+        </div>
+
+        <div id="imgbox">
+            <img src="/assets/Images/GasImage.png" id="gasimg" alt="">
+        </div>
+
+        <div id="Signupbox">
+            <form id="frmsignup">
+                <div id="frmHeading">
+                    <h5>Register your account!</h5>
+                    <p>We invite you to join the GasApp community! Create and verify your profile to get fuel credit for your vehicle!</p>
+                </div>
+                <div id="firstnamebox">
+                    <div id="inputbox">
+                        <img src="assets/Images/user.svg" id="usericon">
+                        <input type="text" name="firstname" id="firstname" placeholder="First Name">
+                    </div>
+                </div>
+                <div id="lastnamebox">
+                    <div id="inputbox">
+                        <img src="assets/Images/user.svg" id="usericon">
+                        <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+                    </div>
+                </div>
+                <div id="inputbox">
+                    <img src="assets/Images/email.svg" id="emailicon">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div id="inputbox">
+                    <img src="assets/Images/pasword.svg" id="passwordicon">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <img src="assets/Images/eyeHide.svg" class="eyeicons" id="passwordimg" onclick="showHidepassword()">
+                </div>
+                <div id="inputbox">
+                    <img src="assets/Images/pasword.svg" id="passwordicon">
+                    <input type="password" name="repassword" id="repassword" placeholder="Re-type password">
+                    <img src="assets/Images/eyeHide.svg" class="eyeicons" id="repasswordimg" onclick="showHiderepassword()">
+                </div>
+                <input id="btnSignup" type="button" value="Create account">
+            </form>
+            <div id="Loginbox">
+                <a href="Login.html" id="linkLogin">Log in</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<script>
+    var check;
+
+    function showHidepassword() {
+        if (check == 1) {
+            document.getElementById("password").type = "password";
+            document.getElementById("passwordimg").src = "assets/Images/eyeHide.svg";
+            check = 0;
+        } else {
+            document.getElementById("password").type = "text";
+            document.getElementById("passwordimg").src = "assets/Images/eye.svg";
+            check = 1;
+        }
+    }
+
+    function showHiderepassword() {
+        if (check == 1) {
+            document.getElementById("repassword").type = "password";
+            document.getElementById("repasswordimg").src = "assets/Images/eyeHide.svg";
+            check = 0;
+        } else {
+            document.getElementById("repassword").type = "text";
+            document.getElementById("repasswordimg").src = "assets/Images/eye.svg";
+            check = 1;
+        }
+    }
+</script>
